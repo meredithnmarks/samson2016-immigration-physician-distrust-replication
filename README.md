@@ -16,7 +16,9 @@ This repository contains the code and documentation needed to reproduce the resu
 
 ### 1. Download the Data
 
-Download `gss2012.RDS` and place it in a folder on your computer. Set this folder as your working directory in R.
+Download the General Social Survey 2012 data and place it in a folder on your computer. Set this folder as your working directory in R.
+
+Due to data licensing and repository size considerations, the gss2012.RDS file is not included in this repository. Users should obtain the dataset separately and place it in the project directory before running the scripts.
 
 ### 2. Download the Scripts
 
