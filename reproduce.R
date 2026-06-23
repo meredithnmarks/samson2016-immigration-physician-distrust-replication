@@ -36,6 +36,7 @@ main <- function() {
     "code/mmarks9-PDIR-02-mgmt-revcode.R",
     "code/mmarks9-PDIR-03-mgmt-missval.R",
     "code/mmarks9-PDIR-04-mgmt-table1var.R",
+    "code/mmarks9-PDIR-05-analysis-desc.R",
     "code/mmarks9-PDIR-06-mgmt-impute.R",
     "code/mmarks9-PDIR-07-mgmt-scale.R",
     "code/mmarks9-PDIR-08-analysis-table1scale.R",
