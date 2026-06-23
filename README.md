@@ -2,7 +2,16 @@
 ````markdown
 # Replication of Samson (2016)
 
-This repository contains the code and documentation needed to reproduce the results of my replication project based on the study *Support for Immigration Reduction and Physician Distrust in the United States* by Frank L. Samson (2016).
+This repository contains the code, documentation, and final report for a replication of Samson (2016), "Support for Immigration Reduction and Physician Distrust in the United States."
+The project reproduces the original analyses using data from the 2012 General Social Survey (GSS).
+
+## Repository Structure
+
+- `code/` – R scripts used for data preparation, imputation, scale construction, and regression analyses
+- `replication_report.pdf` – Final replication report
+- `replication_tables.pdf` – Replication tables
+- `project_diary.pdf` – Documentation of the replication process
+- `Samson2016_originalpaper.pdf` – Original article being replicated
 
 ## Software Requirements
 
@@ -16,13 +25,15 @@ This repository contains the code and documentation needed to reproduce the resu
 
 ### 1. Download the Data
 
-Download the General Social Survey 2012 data and place it in a folder on your computer. Set this folder as your working directory in R.
+Download the General Social Survey 2012 data and place it in a folder on your computer.
+Set this folder as your working directory in R.
 
-Due to data licensing and repository size considerations, the gss2012.RDS file is not included in this repository. Users should obtain the dataset separately and place it in the project directory before running the scripts.
+Due to data licensing and repository size considerations, the gss2012.RDS file is not included in this repository.
+Users should obtain the dataset separately and place it in the project directory before running the scripts.
 
 ### 2. Download the Scripts
-
-Download all script files into the same folder.
+All R scripts are located in the `code/` folder.
+Download all script files into the same folder as the gss2012.RDS file.
 
 1. `mmarks9-PDIR-01-mgmt-setup`
 2. `mmarks9-PDIR-02-mgmt-revcode`
@@ -41,5 +52,3 @@ install.packages(c("dplyr", "mice", "ordinal"))
 
 ### 4. Run the Scripts
  Run the scripts in the order listed above
-
-```r
