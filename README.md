@@ -19,15 +19,7 @@ Quick start (from repo root)
 1. Obtain the GSS 2012 data per the GSS terms and save it at the repository root:
    - Filename: `gss2012.RDS`
 2. Reproduce the full analysis:
-```
-make reproduce
-# or
-Rscript reproduce.R
-```
-3. Clean generated artifacts:
-```
-make clean
-```
+use the reproduce.R script or run files in number order
 
 What’s included
 - `code/` — sequential R scripts implementing the pipeline (01 → 10)
@@ -46,19 +38,4 @@ Script flow (high level)
 Requirements
 - R >= 4.4.2 (tested)
 - Required packages: `dplyr`, `mice`, `ordinal` (the driver will install missing packages)
-- The GSS 2012 data file is not included in this repository; obtain it separately and place it as `gss2012.RDS` in the repository root before running.
-
-Expected outputs
-- `.RDS` intermediate files (mmarks9-PDIR-*.RDS)
-- `.log` files for each script (one per script)
-- `replication_report.pdf` and `replication_tables.pdf` (final outputs / included)
-
-Contact & citation
-- Meredith Marks — https://github.com/meredithnmarks
-- Cite: Samson (2016). This repository: meredithnmarks/samson2016-gss-replication
-
-Next improvements (I can add)
-- Add `renv` and commit a lockfile to pin package versions for reproducibility
-- Add a GitHub Actions workflow to run a smoke-check (or conditional reproduce)
-- Add an R Markdown that re-assembles the final report from model outputs
-- Add repository badges and an explicit `LICENSE` if desired
+- The GSS 2012 data file is not included in this repository; obtain it separately and place it as `gss2012.RDS` before running.
